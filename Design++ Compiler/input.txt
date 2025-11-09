@@ -1,0 +1,51 @@
+!! Single-line comment
+hi
+!* This is a 
+   multi-line comment *!
+
+
+
+load @MyProgram {
+    workspace @counter == 0;
+    start {
+        def draw() {
+            export << "Starting program";
+            import >> @userInput;
+            
+            repeat (i = 0; i < 3; i++) {
+                export << "Counter = ";
+                export << @counter;
+                @counter == @counter ++;      // Increment
+                @counter == @counter ** 2;   // Multiply
+                if @counter >= 5 {
+                    export << "Counter reached 5 or more";
+                }
+                otherwise {
+                    export << "Counter is less than 5";
+                }
+            } until @counter >= 5;
+            
+            save 0;
+            duplicate @temp;
+            
+            ((: "Output this value";
+            @inputVar )): ;
+            
+            text @note == "Test string";
+            color @bgColor == "#fff";
+            toggle @flag == true;
+            
+            select (@bgColor == "#fff") {
+                export << "Background is white";
+            }
+            otherwise {
+                export << "Background is not white";
+            }
+            
+            blend @color1 + @color2;
+        }
+    }
+}
+
+
+

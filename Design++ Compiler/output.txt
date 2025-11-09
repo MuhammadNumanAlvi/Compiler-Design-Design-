@@ -1,0 +1,149 @@
+Line 1: COMMENT (single-line) - !! Single-line comment
+Line 2: ERROR - hi (invalid identifier)
+Line 3: COMMENT (multi-line) - !* This is a 
+   multi-line comment *!
+Line 7: KEYWORD - load
+Line 7: IDENTIFIER - @MyProgram
+Line 7: PUNCTUATION - {
+Line 8: KEYWORD - workspace
+Line 8: IDENTIFIER - @counter
+Line 8: OPERATOR (assignment) - ==
+Line 8: INTEGER - 0
+Line 8: ERROR - ;
+Line 9: KEYWORD - start
+Line 9: PUNCTUATION - {
+Line 10: KEYWORD - def
+Line 10: ERROR - draw (invalid identifier)
+Line 10: PUNCTUATION - (
+Line 10: PUNCTUATION - )
+Line 10: PUNCTUATION - {
+Line 11: KEYWORD - export
+Line 11: OPERATOR (less than) - <
+Line 11: OPERATOR (less than) - <
+Line 11: STRING - "Starting program"
+Line 11: ERROR - ;
+Line 12: KEYWORD - import
+Line 12: OPERATOR (greater than) - >
+Line 12: OPERATOR (greater than) - >
+Line 12: IDENTIFIER - @userInput
+Line 12: ERROR - ;
+Line 14: KEYWORD - repeat
+Line 14: PUNCTUATION - (
+Line 14: ERROR - i (invalid identifier)
+Line 14: OPERATOR (Equal) - =
+Line 14: INTEGER - 0
+Line 14: ERROR - ;
+Line 14: ERROR - i (invalid identifier)
+Line 14: OPERATOR (less than) - <
+Line 14: INTEGER - 3
+Line 14: ERROR - ;
+Line 14: ERROR - i (invalid identifier)
+Line 14: OPERATOR (addition) - ++
+Line 14: PUNCTUATION - )
+Line 14: PUNCTUATION - {
+Line 15: KEYWORD - export
+Line 15: OPERATOR (less than) - <
+Line 15: OPERATOR (less than) - <
+Line 15: STRING - "Counter = "
+Line 15: ERROR - ;
+Line 16: KEYWORD - export
+Line 16: OPERATOR (less than) - <
+Line 16: OPERATOR (less than) - <
+Line 16: IDENTIFIER - @counter
+Line 16: ERROR - ;
+Line 17: IDENTIFIER - @counter
+Line 17: OPERATOR (assignment) - ==
+Line 17: IDENTIFIER - @counter
+Line 17: OPERATOR (addition) - ++
+Line 17: ERROR - ;
+Line 17: OPERATOR (divide) - //
+Line 17: ERROR - Increment (invalid identifier)
+Line 18: IDENTIFIER - @counter
+Line 18: OPERATOR (assignment) - ==
+Line 18: IDENTIFIER - @counter
+Line 18: OPERATOR (multiply) - **
+Line 18: INTEGER - 2
+Line 18: ERROR - ;
+Line 18: OPERATOR (divide) - //
+Line 18: ERROR - Multiply (invalid identifier)
+Line 19: ERROR - if (invalid identifier)
+Line 19: IDENTIFIER - @counter
+Line 19: OPERATOR (greater than equal) - >=
+Line 19: INTEGER - 5
+Line 19: PUNCTUATION - {
+Line 20: KEYWORD - export
+Line 20: OPERATOR (less than) - <
+Line 20: OPERATOR (less than) - <
+Line 20: STRING - "Counter reached 5 or more"
+Line 20: ERROR - ;
+Line 21: PUNCTUATION - }
+Line 22: KEYWORD - otherwise
+Line 22: PUNCTUATION - {
+Line 23: KEYWORD - export
+Line 23: OPERATOR (less than) - <
+Line 23: OPERATOR (less than) - <
+Line 23: STRING - "Counter is less than 5"
+Line 23: ERROR - ;
+Line 24: PUNCTUATION - }
+Line 25: PUNCTUATION - }
+Line 25: ERROR - until (invalid identifier)
+Line 25: IDENTIFIER - @counter
+Line 25: OPERATOR (greater than equal) - >=
+Line 25: INTEGER - 5
+Line 25: ERROR - ;
+Line 27: KEYWORD - save
+Line 27: INTEGER - 0
+Line 27: ERROR - ;
+Line 28: KEYWORD - duplicate
+Line 28: IDENTIFIER - @temp
+Line 28: ERROR - ;
+Line 30: OPERATOR (output) - ((:
+Line 30: STRING - "Output this value"
+Line 30: ERROR - ;
+Line 31: IDENTIFIER - @inputVar
+Line 31: OPERATOR (input) - )):
+Line 31: ERROR - ;
+Line 33: KEYWORD - text
+Line 33: IDENTIFIER - @note
+Line 33: OPERATOR (assignment) - ==
+Line 33: STRING - "Test string"
+Line 33: ERROR - ;
+Line 34: KEYWORD - color
+Line 34: IDENTIFIER - @bgColor
+Line 34: OPERATOR (assignment) - ==
+Line 34: STRING - "#fff"
+Line 34: ERROR - ;
+Line 35: KEYWORD - toggle
+Line 35: IDENTIFIER - @flag
+Line 35: OPERATOR (assignment) - ==
+Line 35: ERROR - true (invalid identifier)
+Line 35: ERROR - ;
+Line 37: KEYWORD - select
+Line 37: PUNCTUATION - (
+Line 37: IDENTIFIER - @bgColor
+Line 37: OPERATOR (assignment) - ==
+Line 37: STRING - "#fff"
+Line 37: PUNCTUATION - )
+Line 37: PUNCTUATION - {
+Line 38: KEYWORD - export
+Line 38: OPERATOR (less than) - <
+Line 38: OPERATOR (less than) - <
+Line 38: STRING - "Background is white"
+Line 38: ERROR - ;
+Line 39: PUNCTUATION - }
+Line 40: KEYWORD - otherwise
+Line 40: PUNCTUATION - {
+Line 41: KEYWORD - export
+Line 41: OPERATOR (less than) - <
+Line 41: OPERATOR (less than) - <
+Line 41: STRING - "Background is not white"
+Line 41: ERROR - ;
+Line 42: PUNCTUATION - }
+Line 44: KEYWORD - blend
+Line 44: IDENTIFIER - @color1
+Line 44: ERROR - +
+Line 44: IDENTIFIER - @color2
+Line 44: ERROR - ;
+Line 45: PUNCTUATION - }
+Line 46: PUNCTUATION - }
+Line 47: PUNCTUATION - }
